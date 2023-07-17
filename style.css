@@ -42,3 +42,65 @@
         text-align: center;
     }
 }
+
+/*navBody style*/
+
+.navBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 216px;
+}
+.bodyDetails p{
+    padding: 10px 200px 20px 0px;
+    margin-bottom: 5px;
+}
+
+.bodyDetails button{
+    background-color:brown;
+    padding: 10px 8px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.bodyImg{
+    background-image: url("./images/images/airpod.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodyImg img{
+    width:200px;
+}
+
+@media screen and (max-width:576px) {
+    .navBody{
+        flex-direction:column-reverse;
+
+    }
+    .bodyDetails{
+        text-align: center;
+    }
+    .bodyDetails p{
+        padding: 0px;
+    }
+    .navBody{
+        margin: 0px;
+    }
+
+    .bodyImg{
+        width: 60%;
+    }
+
+    .bodyImg img{
+        width: 60%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .bodyDetails p{
+        padding: 0px;
+    }
+}
