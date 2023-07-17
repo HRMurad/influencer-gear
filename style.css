@@ -104,3 +104,59 @@
         padding: 0px;
     }
 }
+
+
+/*main section*/
+/*icon section*/
+
+.main{
+    background-color:white;
+    margin-top: 30px;
+}
+
+.iconSection{
+    margin: 0 auto;
+    text-align: center;
+    width: 65%;
+    border-radius: 6px;
+    background-color: darkgray;
+}
+
+.iconBox{
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.iconBox div{
+    margin-right: 6px;
+}
+
+@media screen and (max-width:576px) {
+    .iconBox{
+        flex-direction: column;
+    }
+    .iconBox div{
+        margin-bottom: 12px;
+        background-color: aliceblue;
+        border-radius: 5px;
+    }
+    .iconBox div img{
+        padding: 12px 14px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .iconSection{
+        width: auto;
+    }
+    .iconBox{
+        padding: 0px;
+    }
+    .iconBox div img{
+        width: 100%;
+    }
+}
